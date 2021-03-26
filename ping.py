@@ -47,5 +47,3 @@ while True:
         os.system ('clear')
         os.system ('sleep 0.5')
         continue
-
-        
