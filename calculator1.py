@@ -28,7 +28,7 @@ while True:
     print ('\n')
 
     subprocess.run (['sleep 0.5'], shell=True)
-    Type_the_operation = input ('Type the operation (+, -, *, /) you want to perform ? or e / E to exit: ')
+    Type_the_operation = input ('Type the operation (+, -, *, /) you want to perform or e / E to exit: ')
     subprocess.run (['sleep 0.5'], shell=True)
     subprocess.run (['clear'], shell=True)
 
