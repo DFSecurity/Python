@@ -3,7 +3,7 @@
 
 # name.py
 
-import os
+import os, sys
 
 while True:
 
@@ -28,5 +28,5 @@ while True:
 
     os.system ('clear')
     os.system ('sleep 0.5')
-    exit ()
+    sys.exit ()
 
