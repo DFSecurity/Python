@@ -1,7 +1,7 @@
 
 # coding: UTF-8
 
-# calculator.py
+# calculator1.py
 
 import subprocess, sys
 
@@ -23,7 +23,7 @@ while True:
     print ('\n******************************************************************************')
     print ('\n* Copyright of Demétrio Freitas, 2021                                        *')
     print ('\n* https://github.com/PPrrooggrraammeer                                       *')
-    print ('\n* https://github.com/PPrrooggrraammeerr/Python/banner.py                     *')
+    print ('\n* https://github.com/PPrrooggrraammeerr/Python/calculator1.py                *')
     print ('\n******************************************************************************')
     print ('\n')
 
