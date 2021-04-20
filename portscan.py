@@ -3,7 +3,7 @@
 
 # portscan.py
 
-import socket, os
+import socket, os, sys
 
 while True:
 
@@ -14,11 +14,11 @@ while True:
     print ('******************************************************************************')
     print (r"""
                          _
- ____                   /_/_        _         _____         _ _             *
+ ____                   /_/_        _         _____         _ _              *
 |  _ \  ___ _ __ ___   ___| |_ _ __(_) ___   |  ___| __ ___(_) |_ __ _ ___
-| | | |/ _ \ '_ ` _ \ / _ \ __| '__| |/ _ \  | |_ | '__/ _ \ | __/ _` / __| *
+| | | |/ _ \ '_ ` _ \ / _ \ __| '__| |/ _ \  | |_ | '__/ _ \ | __/ _` / __|  *
 | |_| |  __/ | | | | |  __/ |_| |  | | (_) | |  _|| | |  __/ | || (_| \__ \
-|____/ \___|_| |_| |_|\___|\__|_|  |_|\___/  |_|  |_|  \___|_|\__\__,_|___/ *
+|____/ \___|_| |_| |_|\___|\__|_|  |_|\___/  |_|  |_|  \___|_|\__\__,_|___/  *
 
     """)
     print ('\n******************************************************************************')
@@ -29,14 +29,20 @@ while True:
     print ('\n')
 
     os.system ('sleep 0.5')
-    Type_the_IP_or_Host = input ('Type the IP or Host: ')
+    Type_the_IP_or_Host_or_eE_to_exit = input ('Type the IP or Host or e / E to exit: ')
     Type_the_Port = int (input ('Type the Port: '))
     os.system ('sleep 0.5')
     client = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
-    code = client.connect_ex ((Type_the_IP_or_Host, Type_the_Port))
+    code = client.connect_ex ((Type_the_IP_or_Host_or_eE_to_exit, Type_the_Port))
     os.system ('sleep 0.5')
+    
+    if Type_the_IP_or_Host_or_eE_to_exit == 'e' or Type_the_IP_or_Host_or_eE_to_exit == 'E':
+        
+        os.system ('clear')
+        os.system ('sleep 0.5')
+        sys.exit ()
 
-    if code == 0:
+    if code <= 0:
 
         os.system ('clear')
         os.system ('sleep 0.5')
@@ -45,7 +51,7 @@ while True:
         os.system ('clear')
         continue
 
-    else:
+    elif Type_the_Port >= 1:
 
         os.system ('clear')
         os.system ('sleep 0.5')
