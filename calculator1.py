@@ -52,7 +52,7 @@ while True:
         subprocess.run (['clear'], shell=True)
         subprocess.run (['sleep 0.5'], shell=True)
         print ('Wrong operation')
-        subprocess.run (['sleep 3'], shell=True)
+        subprocess.run (['sleep 2.5'], shell=True)
         subprocess.run (['clear'], shell=True)
         break
 
@@ -60,29 +60,33 @@ while True:
 
         result = (Type_the_first_number + Type_the_second_number)
         print (result)
-        subprocess.run (['sleep 3'], shell=True)
+        subprocess.run (['sleep 2.5'], shell=True)
         subprocess.run (['clear'], shell=True)
-
+        continue
+        
     elif Type_the_operation == '-':
 
         result = (Type_the_first_number - Type_the_second_number)
         print (result)
-        subprocess.run (['sleep 3'], shell=True)
+        subprocess.run (['sleep 2.5'], shell=True)
         subprocess.run (['clear'], shell=True)
+        continue
 
     elif Type_the_operation == '*':
 
         result = (Type_the_first_number * Type_the_second_number)
         print (result)
-        subprocess.run (['sleep 3'], shell=True)
+        subprocess.run (['sleep 2.5'], shell=True)
         subprocess.run (['clear'], shell=True)
+        continue
 
     elif Type_the_operation == '/':
 
         result = (Type_the_first_number / Type_the_second_number)
         print (result)
-        subprocess.run (['sleep 3'], shell=True)
+        subprocess.run (['sleep 2.5'], shell=True)
         subprocess.run (['clear'], shell=True)
+        continue
 
 while True:
 
