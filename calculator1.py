@@ -28,9 +28,9 @@ while True:
     print ('\n')
 
     subprocess.run (['sleep 0.5'], shell=True)
+    
     Type_the_operation = input ('Type the operation (+, -, *, /) you want to perform or e / E to exit: ')
     subprocess.run (['sleep 0.5'], shell=True)
-    subprocess.run (['clear'], shell=True)
 
     if Type_the_operation == 'e' or Type_the_operation == 'E':
 
@@ -40,12 +40,13 @@ while True:
 
     elif Type_the_operation == '+' or Type_the_operation == '-' or Type_the_operation == '*' or Type_the_operation == '/':
 
+        subprocess.run (['clear'], shell=True)
         Type_the_first_number = int (input ('Type the first number: '))
         subprocess.run (['sleep 0.5'], shell=True)
+        
         subprocess.run (['clear'], shell=True)
         Type_the_second_number = int (input ('Type the second number: '))
         subprocess.run (['sleep 0.5'], shell=True)
-        subprocess.run (['clear'], shell=True)
 
     else:
 
@@ -58,6 +59,8 @@ while True:
 
     if Type_the_operation == '+':
 
+        subprocess.run (['clear'], shell=True)
+        subprocess.run (['sleep 0.5'], shell=True)
         result = (Type_the_first_number + Type_the_second_number)
         print (result)
         subprocess.run (['sleep 2.5'], shell=True)
@@ -66,6 +69,8 @@ while True:
         
     elif Type_the_operation == '-':
 
+        subprocess.run (['clear'], shell=True)
+        subprocess.run (['sleep 0.5'], shell=True)
         result = (Type_the_first_number - Type_the_second_number)
         print (result)
         subprocess.run (['sleep 2.5'], shell=True)
@@ -74,6 +79,8 @@ while True:
 
     elif Type_the_operation == '*':
 
+        subprocess.run (['clear'], shell=True)
+        subprocess.run (['sleep 0.5'], shell=True)
         result = (Type_the_first_number * Type_the_second_number)
         print (result)
         subprocess.run (['sleep 2.5'], shell=True)
@@ -82,6 +89,8 @@ while True:
 
     elif Type_the_operation == '/':
 
+        subprocess.run (['clear'], shell=True)
+        subprocess.run (['sleep 0.5'], shell=True)
         result = (Type_the_first_number / Type_the_second_number)
         print (result)
         subprocess.run (['sleep 2.5'], shell=True)
