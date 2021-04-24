@@ -24,7 +24,7 @@ while True:
     print ('\n******************************************************************************')
     print ('\n* Copyright of Demétrio Freitas, 2021                                        *')
     print ('\n* https://github.com/PPrrooggrraammeerr                                      *')
-    print ('\n* https://github.com/PPrrooggrraammeerr/Python/banner.py                     *')
+    print ('\n* https://github.com/PPrrooggrraammeerr/Python/calculator2.py                *')
     print ('\n******************************************************************************')
     print ('\n')    
 
