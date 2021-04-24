@@ -29,6 +29,7 @@ while True:
     print ('\n')
 
     os.system ('sleep 0.5')
+    
     Type_the_IP_or_Host_or_eE_to_exit = input ('Type the IP or Host or e / E to exit: ')
     os.system ('sleep 0.5')
 
@@ -36,13 +37,20 @@ while True:
 
         os.system ('clear')
         os.system ('sleep 0.5')
-        sys.exit ()
+        break
 
     else:
 
         os.system ('clear')
         os.system ('sleep 0.5')
         os.system ('ping {}'.format (Type_the_IP_or_Host_or_eE_to_exit))
-        os.system ('sleep 10')
+        os.system ('sleep 2.5')
         os.system ('clear')
         continue
+        
+while True:
+    
+    os.system ('clear')
+    os.system ('sleep 0.5')
+    sys.exit ()
+    
