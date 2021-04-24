@@ -29,6 +29,7 @@ while True:
     print ('\n')
 
     os.system ('sleep 0.5')
+    
     Type_the_IP_or_Host_or_eE_to_exit = input ('Type the IP or Host or e / E to exit: ')
     os.system ('sleep 0.5')
     
@@ -36,11 +37,11 @@ while True:
         
         os.system ('clear')
         os.system ('sleep 0.5')
-        sys.exit ()
+        break
         
-    os.system ('sleep 0.5')
     Type_the_Port = int (input ('Type the Port: '))
     os.system ('sleep 0.5')
+    
     client = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
     code = client.connect_ex ((Type_the_IP_or_Host_or_eE_to_exit, Type_the_Port))
     os.system ('sleep 0.5')
@@ -50,7 +51,7 @@ while True:
         os.system ('clear')
         os.system ('sleep 0.5')
         print (Type_the_Port, 'is open')
-        os.system ('sleep 10')
+        os.system ('sleep 2.5')
         os.system ('clear')
         continue
 
@@ -59,6 +60,12 @@ while True:
         os.system ('clear')
         os.system ('sleep 0.5')
         print (Type_the_Port, 'is close')
-        os.system ('sleep 10')
+        os.system ('sleep 2.5')
         os.system ('clear')
         continue
+        
+while True:
+    
+    os.system ('clear')
+    os.system ('sleep 0.5')
+    sys.exit ()
