@@ -33,13 +33,17 @@ while True:
     subprocess.run (['sleep 0.5'], shell=True)
     subprocess.run (['clear'], shell=True)
 
-    if size:
+    if characters or size:
 
         aleatory = random.sample (characters, size)
 
-        result = ''.join (aleatory)
+        code = ''.join (aleatory)
 
-        print (result)
+        def result (password):
+        
+            return password
+        
+        print (result (code))
         subprocess.run (['sleep 2.5'], shell=True)
         subprocess.run (['clear'], shell=True)
         break
