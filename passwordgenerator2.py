@@ -44,6 +44,7 @@ while True:
             return password
         
         print (result (code))
+        
         subprocess.run (['sleep 2.5'], shell=True)
         subprocess.run (['clear'], shell=True)
         break
