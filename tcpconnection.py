@@ -32,10 +32,10 @@ while True:
 
     try:
 
-        Type_the_IP_or_Host_or_eE_to_exit = input ('Type the IP or Host or e / E to exit: ')
+        Type_the_IP_or_host_or_eE_to_exit = input ('Type the IP or host or e / E to exit: ')
         subprocess.run (['sleep 0.5'], shell=True)
 
-        if Type_the_IP_or_Host_or_eE_to_exit == 'e' or Type_the_IP_or_Host_or_eE_to_exit == 'E':
+        if Type_the_IP_or_host_or_eE_to_exit == 'e' or Type_the_IP_or_host_or_eE_to_exit == 'E':
 
             subprocess.run (['clear'], shell=True)
             subprocess.run (['sleep 0.5'], shell=True)
@@ -45,7 +45,7 @@ while True:
         subprocess.run (['sleep 0.5'], shell=True)
 
         tcpconnection = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
-        code = tcpconnection.connect_ex ((Type_the_IP_or_Host_or_eE_to_exit, Type_the_port))
+        code = tcpconnection.connect_ex ((Type_the_IP_or_host_or_eE_to_exit, Type_the_port))
         subprocess.run (['sleep 0.5'], shell=True)
 
         if code <= 0:
