@@ -32,7 +32,9 @@ while True:
     os.system ('timeout /t 10 > nul')
     os.system ('cls')
 
-    arq1 = open ('C:\\Users\Helena\Websites2.txt', 'w')
+    user_profile = os.getlogin ()
+    
+    arq1 = open (f'C:\\Users\\{user_profile}\\Desktop\Websites2.txt', 'w')
 
     arqs = list ()
     
