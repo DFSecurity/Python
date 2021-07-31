@@ -32,7 +32,9 @@ while True:
     os.system ('timeout /t 10 > nul')
     os.system ('cls')
 
-    with open ('C:\\Users\Helena\Websites.txt', 'w') as arq1:
+    user_profile = os.getlogin ()
+    
+    with open (f'C:\\Users\\{user_profile}\\Desktop\Websites1.txt', 'w') as arq1:
 
         arq1.write ('192.168.0.1\n')
         arq1.write ('www.google.com\n')
@@ -45,7 +47,7 @@ while True:
         
         break
 
-with open ('C:\\Users\Helena\Websites.txt') as arq2:
+with open ('C:\\Users\\{user_profile}\\Desktop\Websites1.txt') as arq2:
     
     websites = arq2.read ()
     websites = websites.splitlines ()
