@@ -1,7 +1,7 @@
 
 # coding: UTF-8
 
-# portscan1.py
+# portscan.py
 
 import socket, os, sys
 
@@ -21,10 +21,11 @@ while True:
 |____/ \___|_| |_| |_|\___|\__|_|  |_|\___/  |_|  |_|  \___|_|\__\__,_|___/  *
 
     """)
+    
     print ('\n******************************************************************************')
     print ('\n* Copyright of Demétrio Freitas, 2021                                        *')
     print ('\n* https://github.com/PPrrooggrraammeerr                                      *')
-    print ('\n* https://github.com/PPrrooggrraammeerr/Python/portscan1.py                  *')
+    print ('\n* https://github.com/PPrrooggrraammeerr/Python/portscan.py                  *')
     print ('\n******************************************************************************')
     print ('\n')
 
