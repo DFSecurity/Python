@@ -1,7 +1,7 @@
 
-# udpserver.py
-
 # coding: UTF-8
+
+# udpserver.py
 
 import socket, subprocess, time, sys, os
 
@@ -25,7 +25,7 @@ while True:
     print ('\n******************************************************************************')
     print ('\n* Copyright of Demétrio Freitas, 2021                                        *')
     print ('\n* https://github.com/PPrrooggrraammeerr                                      *')
-    print ('\n* https://github.com/PPrrooggrraammeerr/Python/banner.py                     *')
+    print ('\n* https://github.com/PPrrooggrraammeerr/Python/udpserver.py                  *')
     print ('\n******************************************************************************')
     print ('\n')
 
