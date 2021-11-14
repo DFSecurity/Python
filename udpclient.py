@@ -1,7 +1,7 @@
 
-# udpclient.py
-
 # coding: UTF-8
+
+# udpclient.py
 
 import socket, subprocess, time, sys, os
 
