@@ -1,7 +1,7 @@
 
-# pingmultiplewebsites2.py
-
 # coding: UTF-8
+
+# pingmultiplewebsites2.py
 
 import os, sys, time
 
