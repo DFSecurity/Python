@@ -143,7 +143,7 @@ try:
 
     cursor.moveTo (x=50, y=180)
     pyautogui.click ()
-    time.sleep (3.5)
+    time.sleep (5.5)
     pyautogui.typewrite ('\n')
     time.sleep (3.5)
     pyautogui.write (Type_the_EMAIL2)
