@@ -1,4 +1,8 @@
 
+# coding: UTF-8
+
+# CPFidentificationbyBrazilianstates.py
+
 import sys, subprocess, os, time
 
 def usage ():
