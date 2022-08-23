@@ -80,7 +80,7 @@ while True:
 
 # pyautogui alert
 
-pyautogui.alert ('The code will start... Do not use the computer while it is running !')
+pyautogui.alert ('The code will start... Do not use the computer while it is running!')
 pyautogui.pause = 2.5
 
 while True:
@@ -94,7 +94,7 @@ while True:
 
     # input EMAIL for destinatary
 
-    Type_the_EMAIL2 = input ('Type the EMAIL: ')
+    Type_the_EMAIL2 = input ('Enter destination EMAIL: ')
     time.sleep (2.5)
     os.system ('cls')
     break
