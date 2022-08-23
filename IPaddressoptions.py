@@ -49,7 +49,7 @@ while True:
             print ('\n')
 
             subprocess.run (['sleep 0.5'], shell=True)
-            Type_the_option = int (input ("What's my IP ? Type the option: "))
+            Type_the_option = int (input ("What's my IP? Type the option: "))
 
             if Type_the_option == 1:
 
