@@ -33,7 +33,7 @@ while True:
 
     try:
 
-        Type_the_IP_or_host_or_eE_to_exit = input ('Type the IP or host or e / E to exit: ')
+        Type_the_IP_or_host_or_eE_to_exit = input ('Type the IP or host or e/E to exit: ')
         subprocess.run (['sleep 0.5'], shell=True)
 
         if Type_the_IP_or_host_or_eE_to_exit == 'e' or Type_the_IP_or_host_or_eE_to_exit == 'E':
