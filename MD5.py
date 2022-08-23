@@ -29,7 +29,7 @@ while True:
     print ('\n******************************************************************************')
     print ('\n')
 
-    Encrypt_or_eE_to_exit = input ('Encrypt or e / E to exit: ')
+    Encrypt_or_eE_to_exit = input ('Encrypt or e/E to exit: ')
 
     subprocess.run (['sleep 0.5'], shell=True)
     subprocess.run (['clear'], shell=True)
