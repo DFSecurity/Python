@@ -182,7 +182,7 @@ try:
 
             # finish and exit program pyautogui alert
 
-            pyautogui.alert ('The code has been finalized... You can now use the computer !')
+            pyautogui.alert ('The code has been finalized... You can now use the computer!')
             pyautogui.pause = 2.5
 
         message ()
