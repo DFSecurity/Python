@@ -24,7 +24,7 @@ for all_file in all_files:
 
 if os.path.isdir (folder):
 
-    shutil.rmtree(folder, ignore_errors=True)
+    shutil.rmtree (folder, ignore_errors=True)
 
 else:
 
