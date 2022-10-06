@@ -41,7 +41,7 @@ while True:
 
 
     print ('\n')
-    print ('Tabuada de Subtração')
+    print ('Tabuada de Adição')
     print ('\n')
 
     print ('Tabuada do {}'.format (one))
