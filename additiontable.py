@@ -39,66 +39,129 @@ while True:
 
     numbers = range (1, 11)
 
+
     print ('\n')
+    print ('Tabuada de Subtração')
+    print ('\n')
+
+    print ('Tabuada do {}'.format (one))
+    print ('\n')
+
+    print ('============')
 
     for number in numbers:
 
         print (one, '+', number, '=', (one + number))
 
+    print ('============')
     print ('\n')
+
+    print ('Tabuada do {}'.format (one + one))
+    print ('\n')
+
+    print ('============')
 
     for number in numbers:
 
         print (one + one, '+', number, '=', (one + one + number))
 
+    print ('============')    
     print ('\n')
+
+    print ('Tabuada do {}'.format (one + one + one))
+    print ('\n')
+
+    print ('============')
 
     for number in numbers:
 
         print (one + one + one, '+', number, '=', (one + one + one + number))
 
+    print ('============')
     print ('\n')
+
+    print ('Tabuada do {}'.format (one + one + one + one))
+    print ('\n')
+    
+    print ('============')
 
     for number in numbers:
 
         print (one + one + one + one, '+', number, '=', (one + one + one + one + number))
 
+    print ('============')
     print ('\n')
+
+    print ('Tabuada do {}'.format (one + one + one + one + one))
+    print ('\n')
+
+    print ('============')
 
     for number in numbers:
 
         print (one + one + one + one + one, '+', number, '=', (one + one + one + one + one + number))
 
+    print ('============')
     print ('\n')
+
+    print ('Tabuada do {}'.format (one + one + one + one + one + one))
+    print ('\n')
+
+    print ('============')
 
     for number in numbers:
 
         print (one + one + one + one + one + one, '+', number, '=', (one + one + one + one + one + one + number))
 
+    print ('============')
     print ('\n')
+
+    print ('Tabuada do {}'.format (one + one + one + one + one + one + one))
+    print ('\n')
+
+    print ('============')
 
     for number in numbers:
 
         print (one + one + one + one + one + one + one, '+', number, '=', (one + one + one + one + one + one + one + number))
 
+    print ('============')
     print ('\n')
+
+    print ('Tabuada do {}'.format (one + one + one + one + one + one + one + one))
+    print ('\n')
+
+    print ('============')
 
     for number in numbers:
 
         print (one + one + one + one + one + one + one + one, '+', number, '=', (one + one + one + one + one + one + one + one + number))
 
+    print ('============')
     print ('\n')
+
+    print ('Tabuada do {}'.format (one + one + one + one + one + one + one + one + one))
+    print ('\n')
+
+    print ('============')
 
     for number in numbers:
 
         print (one + one + one + one + one + one + one + one + one, '+', number, '=', (one + one + one + one + one + one + one + one + one + number))
 
+    print ('============')
     print ('\n')
+
+    print ('Tabuada do {}'.format (one + one + one + one + one + one + one + one + one + one))
+    print ('\n')
+
+    print ('============')
 
     for number in numbers:
 
         print (one + one + one + one + one + one + one + one + one + one, '+', number, '=', (one + one + one + one + one + one + one + one + one + one + number))
 
+    print ('============')
     print ('\n')
     break
 
