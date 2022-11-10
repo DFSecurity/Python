@@ -89,7 +89,7 @@ while True:
 
     Type_the_EMAIL1 = input ('Type the EMAIL: ')
     time.sleep (2.5)
-    Type_the_PASSWORD = input ('Type_the_PASSWORD: ')
+    Type_the_PASSWORD = pyautogui.password (text='Type the PASSWORD', title='https://accounts.google.com/signin', default='', mask='*')
     os.system ('cls')
 
     # input EMAIL for destinatary
@@ -193,4 +193,3 @@ except:
 
     sys.exit ()
     exit ()
-
