@@ -1,4 +1,6 @@
 
+# coding: UTF-8
+
 # calcular_media.py
 
 import os, time
@@ -54,4 +56,3 @@ elif result_division.calculation () / 4 < 4.0 and result_division.calculation ()
     os.system ('clear')
 
 exit ()
-
