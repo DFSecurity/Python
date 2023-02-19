@@ -1,4 +1,6 @@
 
+# coding: UTF-8
+
 # p_ou_i
 
 import os, time
