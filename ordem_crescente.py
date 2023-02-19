@@ -1,4 +1,6 @@
 
+# coding: UTF-8
+
 # ordem_crescente.py
 
 import os, time
