@@ -1,7 +1,7 @@
 
 # coding: UTF-8
 
-# IP_Scanner
+# IP_Scanner.py
 
 import ipaddress, os, time
 
