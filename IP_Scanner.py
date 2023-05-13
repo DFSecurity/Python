@@ -36,7 +36,7 @@ try:
 
             elif 'Resposta de {}: Host de destino inacess¡vel.'.format (IP) or 'Esgotado o tempo limite do pedido.' in response:
                 
-                print ('{} is down'.format (IP))
+                print ('\033[31m{} is down'.format (IP))
 
 except KeyboardInterrupt:
 
