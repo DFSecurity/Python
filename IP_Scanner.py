@@ -45,4 +45,3 @@ except KeyboardInterrupt:
     time.sleep (0.5)
     os.system ('taskkill /f /im python3.10.exe > nul')
     
-
