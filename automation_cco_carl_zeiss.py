@@ -1,7 +1,7 @@
 
 # coding: UTF-8
 
-# automation.py
+# automation_cco_carl_zeiss.py
 
 import pyautogui
 import os
