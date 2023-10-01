@@ -3,6 +3,8 @@
 
 # extract_pdf.py
 
+# O script extract_pdf.py é um programa simples projetado para extrair e baixar todos os arquivos PDF vinculados a uma página da web específica. Ele usa as bibliotecas requestse BeautifulSouppara buscar e analisar a página da web, respectivamente.
+
 import requests, os
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
