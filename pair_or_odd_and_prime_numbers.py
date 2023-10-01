@@ -3,51 +3,56 @@
 
 # pair_or_odd_and_prime_numbers.py
 
+# O script fornecido pair_or_odd_and_prime_numbers.py solicita que o usuário insira um número e então determina se o número é primo ou não e se é ímpar ou par.
+
 import os, time
 
 os.system ('clear')
 
 try:
 
-    number = int (input ('Type the number: '))
-    zero = 0
+    number = int(input('Type the number: '))
+
+except ValueError:
+
+    print ("Please enter a valid number.")
+    os.system ('clear')
+    exit ()
 
 except KeyboardInterrupt:
 
     os.system ('clear')
     exit ()
 
-class numbers:
+class Numbers:
 
-    def __init__ (self, number, zero):
+    def __init__ (self, number):
 
         self.number = number
-        self.zero = zero
+
+    def is_prime (self):
+
+        if self.number < 2:
+
+            return False
+
+        for i in range (2, int (self.number ** 0.5) + 1):
+
+            if self.number % i == 0:
+
+                return False
+
+        return True
 
     def pair_or_odd_and_prime_numbers (self):
 
-        for value in range (2, self.number + 1):
+        prime_status = "prime" if self.is_prime() else "not prime"
+        even_odd_status = "even" if self.number % 2 == 0 else "odd"
+        return f"Number {self.number} is {prime_status} and {even_odd_status}."
 
-            if self.number % value == 0:
-
-                self.zero += 1
-
-        if self.number == 2:
-
-            return ('number %s is prime and pair' % (self.number))
-
-        elif self.zero == 1:
-
-            return ('number %s is prime and odd' % (self.number))
-
-        else:
-
-            return ('number %s is not prime and pair' % (self.number))
-
-result = numbers (number, zero)
+result = Numbers (number)
 
 os.system ('clear')
-print (result.pair_or_odd_and_prime_numbers ())
-time.sleep (2.5)
-
+print (result.pair_or_odd_and_prime_numbers())
+time.sleep (3.5)
 os.system ('clear')
