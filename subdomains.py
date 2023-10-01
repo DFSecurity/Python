@@ -3,69 +3,58 @@
 
 # subdomains.py
 
-import socket, os, time
+# O script subdomains.py procura subdomínios de um determinado domínio usando uma lista predefinida em subdomains.txt. Se este arquivo não existir, ele criará um com alguns subdomínios comuns.
 
-os.system ('clear')
+import socket
+import os
+import time
 
-domain = input ('domain: ')
+def clear_screen ():
 
-print ('\n')
+    os.system ('cls' if os.name == 'nt' else 'clear')
 
-if not os.path.exists ('subdomains.txt'):
+def get_subdomains ():
 
-    with open ('subdomains.txt', 'w') as file:
+    default_subdomains = {'www', 'ftp', 'mail', 'localhost', 'webmail', 'smtp', 'support', 'download', 'files', 'blog'}
 
-        file.write ('www\n')
-        file.write ('ftp\n')
-        file.write ('mail\n')
-        file.write ('localhost\n')
-        file.write ('webmail\n')
-        file.write ('smtp\n')
-        file.write ('support\n')
-        file.write ('download\n')
-        file.write ('files\n')
-        file.write ('blog\n')
+    if not os.path.exists ('subdomains.txt'):
 
-    time.sleep (2.5)
+        with open ('subdomains.txt', 'w') as file:
+
+            for subdomain in default_subdomains:
+
+                file.write (subdomain + '\n')
 
     with open ('subdomains.txt', 'r') as file:
 
         subdomains = file.readlines ()
 
+    return set (subdomain.strip () for subdomain in subdomains)
+
+def scan_subdomains (domain, subdomains):
+
     for subdomain in subdomains:
 
-        result = subdomain.strip ('\n') + '.' + domain
+        full_domain = f"{subdomain}.{domain}"
 
         try:
 
-            print (result + ': ' + socket.gethostbyname (result))
+            ip_address = socket.gethostbyname (full_domain)
+            print (f"{full_domain}: {ip_address}")
 
         except socket.gaierror:
 
             pass
 
-    time.sleep (2.5)
+def main ():
+
+    clear_screen ()
+    domain = input ('domain: ')
+    print ('\n')
+    subdomains = get_subdomains ()
+    scan_subdomains (domain, subdomains)
     print ('\n')
 
-elif os.path.exists ('subdomains.txt'):
+if __name__ == '__main__':
 
-    time.sleep (2.5)
-
-    with open ('subdomains.txt', 'r') as file:
-
-        subdomains = file.readlines ()
-
-    for subdomain in subdomains:
-
-        result = subdomain.strip ('\n') + '.' + domain
-
-        try:
-
-            print (result + ': ' + socket.gethostbyname (result))
-
-        except socket.gaierror:
-
-            pass
-
-    time.sleep (2.5)
-    print ('\n')
+    main ()
