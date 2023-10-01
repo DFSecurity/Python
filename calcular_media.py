@@ -3,6 +3,8 @@
 
 # calcular_media.py
 
+# O script calcular_media.py calcula a média das quatro notas inseridas e, com base na média calculada, determina se o aluno foi aprovado, aprovado pelo conselho de classe, em recuperação ou reprovado.
+
 import os, time
 
 os.system ('clear')
