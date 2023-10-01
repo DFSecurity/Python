@@ -3,6 +3,8 @@
 
 # Wordlist.py
 
+# O script Wordlist.py tem como objetivo gerar uma wordlist com todas as permutações possíveis de uma string fornecida pelo usuário. Essas permutações são salvas em um arquivo chamado Wordlist.txt na área de trabalho do usuário.
+
 import itertools, os, time
 
 time.sleep (0.5)
