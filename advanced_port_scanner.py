@@ -1,7 +1,9 @@
 
 # coding: UTF-8
 
-# advancedportscan.py
+# advanced_port_scanner.py
+
+# O script advanced_port_scanner.py é um escaneador simples de portas que tenta se conectar a cada porta de um IP ou host fornecido, do intervalo 1 a 65535. Se a porta estiver aberta, ele exibe essa porta junto com o serviço associado.
 
 import socket, sys, subprocess, os, time
 
@@ -24,17 +26,16 @@ def usage ():
     
     print ('\n******************************************************************************')
     print ('\n* Copyright of Demétrio Freitas, 2021                                        *')
-    print ('\n* https://github.com/PPrrooggrraammeerr                                      *')
-    print ('\n* https://github.com/PPrrooggrraammeerr/Python/advancedportscan.py           *')
+    print ('\n* https://github.com/DFSecurity                                              *')
+    print ('\n* https://github.com/DFSecurity/Python/advanced_port_scanner.py              *')
     print ('\n******************************************************************************')
     print ('\n')
 
     print ('python3 advancedportscan.py -h')
     print ('\n')
-    subprocess.run (['sleep 2.5'], shell=True)
+    subprocess.run (['sleep 3.5'], shell=True)
     subprocess.run (['clear'], shell=True)
     sys.exit ()
-    exit ()
 
 def advancedportscan (Type_the_IP_or_host):
 
@@ -73,7 +74,7 @@ def main ():
 
             print ('python3 advancedportscan.py [IP or host]')
 
-            time.sleep (2.5)
+            time.sleep (3.5)
             os.system ('clear')
 
         else:
@@ -91,9 +92,7 @@ if __name__ == '__main__':
 
 while True:
 
-    subprocess.run (['sleep 2.5'], shell=True)
+    subprocess.run (['sleep 3.5'], shell=True)
     break
 
 sys.exit ()
-exit ()
-
