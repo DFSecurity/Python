@@ -1,7 +1,9 @@
 
 # coding: UTF-8
 
-# phonenumberinformation.py
+# phone_number_information.py
+
+# O script phone_number_information.py recupera informações sobre um número de telefone usando a phonenumbers biblioteca.
 
 import phonenumbers, time, subprocess, os, sys
 from phonenumbers import geocoder
