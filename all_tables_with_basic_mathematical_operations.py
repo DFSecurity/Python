@@ -3,6 +3,8 @@
 
 # all_tables_with_basic_mathematical_operations.py
 
+# O script all_tables_with_basic_mathematical_operations.py apresenta tabelas de operações matemáticas básicas (adição, subtração, multiplicação e divisão) para valores até 10.
+
 import subprocess, os
 
 while True:
@@ -86,4 +88,3 @@ print ('\n')
 
 subprocess.run (['sleep 2.5'], shell=True)
 subprocess.run (['clear'], shell=True)
-
