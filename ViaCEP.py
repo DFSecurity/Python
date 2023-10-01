@@ -3,130 +3,108 @@
 
 # ViaCEP.py
 
+# O script ViaCEP.py tem como objetivo consultar informações relacionadas a um CEP (Código de Endereçamento Postal) brasileiro por meio do serviço ViaCEP.
+
 import requests
-import subprocess
 import os
-import time
 import sys
+import time
+
+def clear_screen ():
+
+    os.system ('cls' if os.name == 'nt' else 'clear')
 
 def usage ():
 
-    subprocess.run (['clear'], shell=True)
-    subprocess.run (['sleep 0.5'], shell=True)
+    clear_screen ()
+    time.sleep (0.5)
 
     print ('\n')
     print ('******************************************************************************')
     print (r"""
                          _
- ____                   /_/_        _         _____         _ _              *
+ ____                   /_/_        _         _____         _ _
 |  _ \  ___ _ __ ___   ___| |_ _ __(_) ___   |  ___| __ ___(_) |_ __ _ ___
-| | | |/ _ \ '_ ` _ \ / _ \ __| '__| |/ _ \  | |_ | '__/ _ \ | __/ _` / __|  *
+| | | |/ _ \ '_ ` _ \ / _ \ __| '__| |/ _ \  | |_ | '__/ _ \ | __/ _` / __|
 | |_| |  __/ | | | | |  __/ |_| |  | | (_) | |  _|| | |  __/ | || (_| \__ \
-|____/ \___|_| |_| |_|\___|\__|_|  |_|\___/  |_|  |_|  \___|_|\__\__,_|___/  *
+|____/ \___|_| |_| |_|\___|\__|_|  |_|\___/  |_|  |_|  \___|_|\__\__,_|___/
 
     """)
 
     print ('\n******************************************************************************')
     print ('\n* Copyright of Demétrio Freitas, 2022                                        *')
-    print ('\n* https://github.com/PPrrooggrraammeerr                                      *')
-    print ('\n* https://github.com/PPrrooggrraammeerr/Python/ViaCEP.py                     *')
+    print ('\n* https://github.com/DFSecurity                                              *')
+    print ('\n* https://github.com/DFSecurity/Python/ViaCEP.py                             *')
     print ('\n******************************************************************************')
     print ('\n')
 
     print ('python3 ViaCEP.py -h')
     print ('\n')
-    subprocess.run (['sleep 2.5'], shell=True)
-    subprocess.run (['clear'], shell=True)
+
+    time.sleep (3.5)
+    clear_screen ()
     sys.exit ()
-    exit ()
 
-def viacep (Type_the_CEP):
+def viacep (cep):
 
-    time.sleep (0.5)
-    os.system ('clear')
+    clear_screen ()
 
-    try:
+    cep = cep.replace ('-', '')
 
-        cep = Type_the_CEP.replace ('-', '')
+    if len (cep) == 8:
 
-        if len (cep) == 8:
+        link = f'https://viacep.com.br/ws/{cep}/json/'
+        response = requests.get (link)
 
-            link = f'https://viacep.com.br/ws/{cep}/json/'
+        if response.status_code == 200:
 
-            status = requests.get (link)
+            data = response.json ()
 
-            dictionary = status.json ()
+            if "erro" not in data:
 
-            cep = dictionary ['cep']
-            logradouro = dictionary ['logradouro']
-            bairro = dictionary ['bairro']
-            localidade = dictionary ['localidade']
-            uf = dictionary ['uf']
-            ibge = dictionary ['ibge']
-            gia = dictionary ['gia']
-            ddd = dictionary ['ddd']
-            siafi = dictionary ['siafi']
+                print (f"CEP: {data['cep']}")
+                print (f"Logradouro: {data['logradouro']}")
+                print (f"Bairro: {data['bairro']}")
+                print (f"Localidade: {data['localidade']}")
+                print (f"UF: {data['uf']}")
+                print (f"IBGE: {data['ibge']}")
+                print (f"GIA: {data['gia']}")
+                print (f"DDD: {data['ddd']}")
+                print (f"SIAFI: {data['siafi']}")
 
-            print ('CEP: %s' % (cep))
-            print ('Logradouro: %s' % (logradouro))
-            print ('Bairro: %s' % (bairro))
-            print ('Localidade: %s' % (localidade))
-            print ('UF: %s' % (uf))
-            print ('IBGE: %s' % (ibge))
-            print ('GIA: %s' % (gia))
-            print ('DDD: %s' % (ddd))
-            print ('SIAFI: %s' % (siafi))
+                time.sleep (3.5)
+                clear_screen ()
 
-            time.sleep (2.5)
-            os.system ('clear')
+            else:
 
-        else:
+                print ("Invalid CEP.")
+                time.sleep (3.5)
+                clear_screen ()
 
-            print ('Invalid CEP')
-            time.sleep (2.5)
-            os.system ('clear')
+    else:
 
-
-    except:
-
-        os.system ('clear')
-        time.sleep (0.5)
-        pass
-
-    return Type_the_CEP
+        print ("Invalid CEP format.")
+        time.sleep (3.5)
+        clear_screen ()
 
 def main ():
 
-    try:
-
-        if sys.argv [1] == '-h':
-
-            time.sleep (0.5)
-            os.system ('clear')
-
-            print ('python3 ViaCEP.py [CEP]')
-
-            time.sleep (2.5)
-            os.system ('clear')
-
-        else:
-
-            Type_the_CEP = (sys.argv [1])
-            viacep (Type_the_CEP)
-
-    except:
+    if len (sys.argv) < 2:
 
         usage ()
+
+    option = sys.argv [1]
+
+    if option == '-h':
+
+        print ('python3 ViaCEP.py [CEP]')
+        time.sleep (3.5)
+        clear_screen ()
+
+    else:
+
+        viacep (option)
 
 if __name__ == '__main__':
 
     main ()
-
-while True:
-
-    subprocess.run (['sleep 2.5'], shell=True)
-    break
-
-sys.exit ()
-exit ()
-
