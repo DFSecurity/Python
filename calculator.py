@@ -1,7 +1,9 @@
 
 # coding: UTF-8
 
-# calculator3.py
+# calculator.py
+
+# O script calculator.py é um programa de calculadora simples que suporta as quatro operações matemáticas básicas (+, -, *, /).
 
 import subprocess, sys
 
@@ -24,8 +26,8 @@ while True:
 
     print ('\n******************************************************************************')
     print ('\n* Copyright of Demétrio Freitas, 2022                                        *')
-    print ('\n* https://github.com/PPrrooggrraammeerr                                      *')
-    print ('\n* https://github.com/PPrrooggrraammeerr/Python/calculator3.py                *')
+    print ('\n* https://github.com/DFSecurity                                              *')
+    print ('\n* https://github.com/DFSecurity/Python/calculator.py                         *')
     print ('\n******************************************************************************')
     print ('\n')
 
