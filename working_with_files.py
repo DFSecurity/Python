@@ -1,7 +1,9 @@
 
 # coding: UTF-8
 
-# workingwithfiles.py
+# working_with_files.py
+
+# O script fornecido apresenta uma ferramenta de gerenciamento de arquivos com múltiplas opções para trabalhar com arquivos.
 
 import os
 import shutil
