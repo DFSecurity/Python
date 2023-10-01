@@ -3,6 +3,8 @@
 
 # IP_Scanner.py
 
+# O código abaixo tem como objetivo verificar um determinado intervalo de endereços IP. Em seguida, ele tenta executar ping em cada endereço IP nesse intervalo e grava o resultado em um arquivo nomeado IP_Scanner_results.txt na área de trabalho do usuário.
+
 import ipaddress, os, time
 
 try:
@@ -30,6 +32,7 @@ try:
 
             if 'Aproximar um n£mero redondo de vezes em milissegundos:' in response:
             
+                print ('\033[32m{} is up'.format (IP))
                 results = open (f'C:\\Users\\{user_profile}\\Desktop\\IP_Scanner_results.txt', 'a')
                 results.write ('{} is up\n'.format (IP))
                 results.close ()
@@ -44,4 +47,3 @@ except KeyboardInterrupt:
     os.remove (f'C:\\Users\\{user_profile}\\Desktop\\IPs.txt')
     time.sleep (0.5)
     os.system ('taskkill /f /im python3.10.exe > nul')
-    
