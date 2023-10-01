@@ -24,8 +24,8 @@ print (r"""
     
 print ('\n******************************************************************************')
 print ('\n* Copyright of Demétrio Freitas, 2021                                        *')
-print ('\n* https://github.com/PPrrooggrraammeerr                                      *')
-print ('\n* https://github.com/PPrrooggrraammeerr/Python/Wordlist.py                   *')
+print ('\n* https://github.com/DFSecurity                                              *')
+print ('\n* https://github.com/DFSecurity/Python/Wordlist.py                           *')
 print ('\n******************************************************************************')
 print ('\n')
 
