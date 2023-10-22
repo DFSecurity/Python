@@ -33,8 +33,8 @@ def show_banner ():
 
     print('\n******************************************************************************')
     print('\n* Copyright of Demétrio Freitas, 2021                                        *')
-    print('\n* https://github.com/DFSecurity                                              *')
-    print('\n* https://github.com/DFSecurity/Python/IP_address_options.py                 *')
+    print('\n* https://github.com/PPrrooggrraammeerr                                      *')
+    print('\n* https://github.com/PPrrooggrraammeerr/Python/IP_address_options.py         *')
     print('\n******************************************************************************')
     print('\n')
 
