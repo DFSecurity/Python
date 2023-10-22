@@ -33,8 +33,8 @@ def usage ():
 
     print ('\n******************************************************************************')
     print ('\n* Copyright of Demétrio Freitas, 2022                                        *')
-    print ('\n* https://github.com/DFSecurity                                              *')
-    print ('\n* https://github.com/DFSecurity/Python/ViaCEP.py                             *')
+    print ('\n* https://github.com/PPrrooggrraammeerr                                      *')
+    print ('\n* https://github.com/PPrrooggrraammeerr/Python/ViaCEP.py                     *')
     print ('\n******************************************************************************')
     print ('\n')
 
