@@ -26,8 +26,8 @@ def usage ():
     
     print ('\n******************************************************************************')
     print ('\n* Copyright of Demétrio Freitas, 2021                                        *')
-    print ('\n* https://github.com/DFSecurity                                              *')
-    print ('\n* https://github.com/DFSecurity/Python/advanced_port_scanner.py              *')
+    print ('\n* https://github.com/PPrrooggrraammeerr                                      *')
+    print ('\n* https://github.com/PPrrooggrraammeerr/Python/advanced_port_scanner.py      *')
     print ('\n******************************************************************************')
     print ('\n')
 
