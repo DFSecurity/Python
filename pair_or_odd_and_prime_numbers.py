@@ -11,7 +11,7 @@ os.system ('clear')
 
 try:
 
-    number = int(input('Type the number: '))
+    number = int (input ('Type the number: '))
 
 except ValueError:
 
@@ -46,13 +46,13 @@ class Numbers:
 
     def pair_or_odd_and_prime_numbers (self):
 
-        prime_status = "prime" if self.is_prime() else "not prime"
+        prime_status = "prime" if self.is_prime () else "not prime"
         even_odd_status = "even" if self.number % 2 == 0 else "odd"
         return f"Number {self.number} is {prime_status} and {even_odd_status}."
 
 result = Numbers (number)
 
 os.system ('clear')
-print (result.pair_or_odd_and_prime_numbers())
+print (result.pair_or_odd_and_prime_numbers ())
 time.sleep (3.5)
 os.system ('clear')
