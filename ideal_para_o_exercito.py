@@ -50,13 +50,13 @@ class Exercito:
                 cor = '\033[32m' if valido else '\033[31m'
                 print (f"{cor}{requisito}: {'Atendido' if valido else 'Não atendido'}")
 
-            print('\033[0m')
-            time.sleep(4.5)
-            os.system('clear')
+            print ('\033[0m')
+            time.sleep (4.5)
+            os.system ('clear')
 
         except KeyboardInterrupt:
 
-            os.system('clear')
+            os.system ('clear')
             pass
 
 if __name__ == "__main__":
