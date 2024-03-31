@@ -34,48 +34,48 @@ while True:
 
     try:
 
-        server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        server = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
 
-        Type_the_IP_or_host = input('Type the IP or host: ')
-        Type_the_port = int(input('Type the port: '))
+        Type_the_IP_or_host = input ('Type the IP or host: ')
+        Type_the_port = int (input ('Type the port: '))
 
-        time.sleep(0.5)
-        subprocess.run(['cls'], shell=True)
+        time.sleep (0.5)
+        subprocess.run (['cls'], shell=True)
 
-        server.bind((Type_the_IP_or_host, Type_the_port))
+        server.bind ((Type_the_IP_or_host, Type_the_port))
 
-        server.listen()
+        server.listen ()
 
-        dice, client = server.accept()
+        dice, client = server.accept ()
 
-        print('Server IP or host: {}'.format(Type_the_IP_or_host))
-        print('Open port: {}'.format(Type_the_port))
-        print('\n')
+        print ('Server IP or host: {}'.format (Type_the_IP_or_host))
+        print ('Open port: {}'.format (Type_the_port))
+        print ('\n')
         break
 
     except KeyboardInterrupt:
     
-        subprocess.run(['cls'], shell=True)
-        time.sleep(0.5)
-        server.close()
-        sys.exit()
+        subprocess.run (['cls'], shell=True)
+        time.sleep (0.5)
+        server.close ()
+        sys.exit ()
 
 while True:
 
     try:
     
-        package = dice.recv(1024)
-        package = package.decode('UTF-8')
-        print('Client: {}'.format(package))
+        package = dice.recv (1024)
+        package = package.decode ('UTF-8')
+        print ('Client: {}'.format (package))
 
-        message = input('Server: ')
+        message = input ('Server: ')
 
-        dice.send(message.encode('UTF-8'))
+        dice.send (message.encode ('UTF-8'))
 
     except KeyboardInterrupt:
     
-        subprocess.run(['clear'], shell=True)
-        time.sleep(0.5)
-        server.close()  
-        client.close()  
-        sys.exit()
+        subprocess.run (['clear'], shell=True)
+        time.sleep (0.5)
+        server.close ()  
+        client.close ()  
+        sys.exit ()
