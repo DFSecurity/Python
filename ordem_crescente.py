@@ -10,11 +10,11 @@ import os, time
 os.system('clear')
 
 values = []
-values.append(int(input('value1: ')))
-values.append(int(input('value2: ')))
-values.append(int(input('value3: ')))
+values.append (int (input ('value1: ')))
+values.append (int (input ('value2: ')))
+values.append (int (input ('value3: ')))
 
-sorted_values = sorted(values)
+sorted_values = sorted (values)
 
 os.system ('clear')
 print (sorted_values [0], sorted_values [1], sorted_values [2])
