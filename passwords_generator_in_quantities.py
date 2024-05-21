@@ -3,6 +3,8 @@
 
 # passwords_generator_in_quantities.py
 
+# O script passwords_generator_in_quantities.py gera uma quantidade especificada de senhas aleatórias com um número definido de caracteres, utilizando uma combinação de letras, dígitos e símbolos de pontuação. Cada senha é exibida ao usuário após sua criação.
+    
 from random import choice
 import os, string
 
