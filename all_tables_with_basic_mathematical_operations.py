@@ -56,7 +56,7 @@ while True:
 
             for number in range (10+1):
 
-                print (f'%d %s %d = %d' % (number+value, operation, number, number + value - value))
+                print (f'%d %s %d = %d' % (number+value, operation, value, number + value - value))
 
         break
 
