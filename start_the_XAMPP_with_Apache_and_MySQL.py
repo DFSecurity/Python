@@ -32,7 +32,7 @@ if os.path.exists (xampp_location_path) == True:
                 
                     try:
 
-                        subprocess.run (['taskkill', '/f', '/im', process_of_xampp], check = True)
+                        subprocess.run (['taskkill', '/f', '/im', process_of_xampp], check=True)
 
                     except:                  
     
