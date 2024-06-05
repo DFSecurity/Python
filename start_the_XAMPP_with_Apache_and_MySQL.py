@@ -3,7 +3,7 @@
 
 # start_the_XAMPP_with_Apache_and_MySQL.py
 
-# O script 'start_the_XAMPP_with_Apache_and_MySQL.py' automatiza o start de determinados processos presentes em uma lista, onde visa que, com base em seu conteúdo, se inicie todos os processos ou encerre o código.
+# O script start_the_XAMPP_with_Apache_and_MySQL.py automatiza o start de determinados processos presentes em uma lista, onde visa que, com base em seu conteúdo, se inicie todos os processos ou encerre o código.
 
 import os
 import time
