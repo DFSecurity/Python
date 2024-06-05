@@ -59,7 +59,7 @@ while True:
                 self.first_number = Type_the_first_number
                 self.second_number = Type_the_second_number
 
-            def adition (self):
+            def addition (self):
 
                 return self.first_number + self.second_number
 
@@ -90,7 +90,7 @@ while True:
 
         subprocess.run (['clear'], shell=True)
         subprocess.run (['sleep 0.5'], shell=True)
-        print (calculator_and_result.adition ())
+        print (calculator_and_result.addition ())
         subprocess.run (['sleep 2.5'], shell=True)
         subprocess.run (['clear'], shell=True)
         continue
