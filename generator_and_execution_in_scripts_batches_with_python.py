@@ -1,7 +1,7 @@
 
 # coding: UTF-8
 
-# generator_and_execution_in_scripts_batchs_with_python.py
+# generator_and_execution_in_scripts_batches_with_python.py
 
 import os
 import subprocess
