@@ -1,9 +1,9 @@
 
 # coding: UTF-8
 
-# CPFidentificationbyBrazilianstates.py
+# CPF_identification_by_Brazilian_states.py
 
-# O script CPFidentificationbyBrazilianstates.py identifica um estado brasileiro (ou sua sigla) e imprime uma identificação fictícia de CPF associada a esse estado.
+# O script CPF_identification_by_Brazilian_states.py identifica um estado brasileiro (ou sua sigla) e imprime uma identificação fictícia de CPF associada a esse estado.
 
 import sys, time, os
 
